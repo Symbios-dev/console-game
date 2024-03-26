@@ -6,6 +6,7 @@ from snake.solver.path import PathSolver
 class GreedySolver(BaseSolver):
     def __init__(self, snake):
         super().__init__(snake)
+        print("Initialized")
         self._path_solver = PathSolver(snake)
 
     def next_direc(self):
