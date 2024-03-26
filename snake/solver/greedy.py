@@ -8,6 +8,10 @@ class GreedySolver(BaseSolver):
         super().__init__(snake)
         self._path_solver = PathSolver(snake)
 
+    def __init__(self):
+        """duplicate init""
+        return 1
+
     def next_direc(self):
         # Create a virtual snake
         s_copy, m_copy = self.snake.copy()
